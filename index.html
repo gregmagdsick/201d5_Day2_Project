@@ -28,10 +28,18 @@
         console.log('user got question2 correct');
       } else {
         alert('Bummer ' + user + ', you got question 2 wrong.')
-        console.log('user got question2 wrong.');
+        console.log('user got question2 wrong. I do have brown hair.');
       }
 
-
+      var answer3 = prompt(user + ', here is question number 3: Do I have 4 kids?');
+      console.log('user\'s answer3 is: ' + answer3);
+      if (answer3 === 'N') {
+        alert('Awesome ' + user + ', you got this one right!');
+        console.log('user got question3 right.');
+      } else {
+        alert('Oops, ' + user + ', you got this one wrong.');
+        console.log('user got question3 wrong.');
+      }
     </script>
   </body>
 </html>
