@@ -8,18 +8,30 @@
     <h1>Time to do some trivia!</h1>
     <script type="text/javascript">
       var user = prompt('What is your name?');
-      console.log('The user\'s name is ' + user);
+      console.log('The user\'s name is :' + user);
 
       alert('Hi ' + user + '. I\'m going to ask you 3 yes or no questions. Please answer with a Y or N for each question.');
-      var answer1 = prompt(user + ', am I a resident of Washington state?')
+      var answer1 = prompt(user + ', am I a resident of Washington state?');
       console.log('user\'s answer1 is: ' + answer1);
       if (answer1 === 'Y') {
         alert('Great ' + user + ', you got the first question right')
-        console.log('User got question1 correct.');
+        console.log('user got question1 correct.');
       } else {
         alert('Sorry ' + user + ', that\'s not right, I am a resident of Washington.')
-        console.log('User got question1 wrong.');
+        console.log('user got question 1 wrong.');
       }
+
+      var answer2 = prompt(user + ', here is question number 2: Do I have brown hair?');
+      console.log('user\'s answer2 is: ' + answer2);
+      if (answer2 === 'Y') {
+        alert('Fantastic ' + user + ', you are right!')
+        console.log('user got question2 correct');
+      } else {
+        alert('Bummer ' + user + ', you got question 2 wrong.')
+        console.log('user got question2 wrong.');
+      }
+
+
     </script>
   </body>
 </html>
