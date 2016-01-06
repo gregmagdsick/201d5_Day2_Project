@@ -47,19 +47,22 @@ if (answer3.toLowerCase() === 'n' || answer3.toLowerCase() === 'no') {
   console.log('user got question3 wrong.');
 }
 
+
 alert(user + ', time for a bonus question. Please respond with a number, such as 2, not \'two\'.');
+do {
 var answer4 = prompt(user + ', how many years have I been married?');
 console.log('user\'s answer4 is: ' + answer4);
 if (answer4 > 5) {
-  alert('Sorry ' + user + ', your answer is too high.');
+  alert('Sorry ' + user + ', your answer is too high, I\'m not that old! Guess again.');
   console.log('user\'s answer4 is too high.');
-}else if (answer4 < 5) {
-  alert('Sorry ' + user + ', your answer was too low.');
-  console.log('user\'s answer4 is too low.');
 }else if (answer4 == 5) {
-  alert('Congratulations, you got it right. I have been married for 5 years.');
-  console.log('user\'s answer4 is correct.');
+  alert('Fantastic ' + user + 'You nailed it!');
+  console.log('user\'s answer4 is correct');
+}else if (answer4 < 5) {
+  alert('Sorry ' + user + ', your answer was too low. Do you see the grey hair in my beard? Guess again.');
+  console.log('user\'s answer4 is too low.');
 }else {
-  alert('It looks like you didn\'t enter a numeric value. Please start over.')
+  alert('It looks like you didn\'t enter a numeric value. Please enter a number, or I\'ll have to find a tack hammer.')
   console.log('user\'s answer4 was not a number.');
-}
+};
+} while (answer4 != 5);
