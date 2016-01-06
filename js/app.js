@@ -47,6 +47,7 @@ if (answer3.toLowerCase() === 'n' || answer3.toLowerCase() === 'no') {
   console.log('user got question3 wrong.');
 }
 
+alert('You got ' + counter + ' out of 3 questions correct.')
 
 alert(user + ', time for a bonus question. Please respond with a number, such as 2, not \'two\'.');
 do {
@@ -56,7 +57,7 @@ if (answer4 > 5) {
   alert('Sorry ' + user + ', your answer is too high, I\'m not that old! Guess again.');
   console.log('user\'s answer4 is too high.');
 }else if (answer4 == 5) {
-  alert('Fantastic ' + user + 'You nailed it!');
+  alert('Fantastic ' + user + ', you nailed it!');
   console.log('user\'s answer4 is correct');
 }else if (answer4 < 5) {
   alert('Sorry ' + user + ', your answer was too low. Do you see the grey hair in my beard? Guess again.');
