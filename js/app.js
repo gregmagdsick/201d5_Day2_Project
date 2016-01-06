@@ -1,10 +1,12 @@
 var user = prompt('What is your name?');
 console.log('The user\'s name is :' + user);
 
-alert('Hi ' + user + '. I\'m going to ask you 3 yes or no questions. Please answer with a Y or N for each question.');
+alert('Hi ' + user + '. I\'m going to ask you 3 yes or no questions. Please answer yes or no for each question.');
+
+// make is so we can accept 'y' or 'Y' or 'yes' or 'YES' as an acceptable response to the question//
 var answer1 = prompt(user + ', am I a resident of Washington state?');
 console.log('user\'s answer1 is: ' + answer1);
-if (answer1 === 'Y') {
+if (answer1 === 'Y' || answer1 === 'y' || answer1 === 'YES' || answer1 === 'yes' || answer1 === 'Yes') {
   alert('Great ' + user + ', you got the first question right')
   console.log('user got question1 correct.');
 } else {
