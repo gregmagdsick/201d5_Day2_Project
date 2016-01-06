@@ -3,10 +3,12 @@ console.log('The user\'s name is :' + user);
 
 alert('Hi ' + user + '. I\'m going to ask you 3 yes or no questions. Please answer yes or no for each question.');
 
-// make is so we can accept 'y' or 'Y' or 'yes' or 'YES' as an acceptable response to the question//
+
 var answer1 = prompt(user + ', am I a resident of Washington state?');
 console.log('user\'s answer1 is: ' + answer1);
-if (answer1 === 'Y' || answer1 === 'y' || answer1 === 'YES' || answer1 === 'yes' || answer1 === 'Yes') {
+
+// make is so we can accept 'y' or 'Y' or 'yes' or 'YES' as an acceptable response to the question//
+if (answer1.toLowerCase() === 'y' || answer1.toLowerCase() === 'yes') {
   alert('Great ' + user + ', you got the first question right')
   console.log('user got question1 correct.');
 } else {
@@ -16,7 +18,8 @@ if (answer1 === 'Y' || answer1 === 'y' || answer1 === 'YES' || answer1 === 'yes'
 
 var answer2 = prompt(user + ', here is question number 2: Do I have brown hair?');
 console.log('user\'s answer2 is: ' + answer2);
-if (answer2 === 'Y') {
+// make is so we can accept 'y' or 'Y' or 'yes' or 'YES' as an acceptable response to the question//
+if (answer2.toLowerCase() === 'y' || answer2.toLowerCase() === 'yes') {
   alert('Fantastic ' + user + ', you are right!')
   console.log('user got question2 correct');
 } else {
@@ -26,7 +29,7 @@ if (answer2 === 'Y') {
 
 var answer3 = prompt(user + ', here is question number 3: Do I have 4 kids?');
 console.log('user\'s answer3 is: ' + answer3);
-if (answer3 === 'N') {
+if (answer3.toLowerCase() === 'n' || answer3.toLowerCase() === 'no') {
   alert('Awesome ' + user + ', you got this one right!');
   console.log('user got question3 right.');
 } else {
