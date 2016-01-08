@@ -9,3 +9,6 @@ Rick Stoner helped me debug the logical operators in my do while loop.
 
 1/7/16 Moved questions into functions and responses to the first 3 questions are now added to the website.
        Elena Saygo was the driver for this pair programming exercise.
+
+1/8/16 Made code DRY, added color coding on answers to questions, added links to pair programmers games
+        Sean Mills was the driver for this pair programming exercise.
