@@ -14,9 +14,9 @@ alert('Hi ' + user + '. I\'m going to ask you 3 yes or no questions. Please answ
 var yesAns = ['y','yes','n','no'];
 var noAns = ['n','no','y','yes'];
 
-var quesData = [[user + ', am I a resident of Washington state?', yesAns, 'Great ' + user + ', you got the first question right', 
-'Sorry ' + user + ', that\'s not right, I am a resident of Washington.', res1],[user + ', here is question number 2: Do I have brown hair?', yesAns, 
-'Fantastic ' + user + ', you are right!', 'Bummer ' + user + ', you got question 2 wrong.', res2], [user + ', here is question number 3: Do I have 4 kids?', noAns, 
+var quesData = [[user + ', am I a resident of Washington state?', yesAns, 'Great ' + user + ', you got the first question right',
+'Sorry ' + user + ', that\'s not right, I am a resident of Washington.', res1],[user + ', here is question number 2: Do I have brown hair?', yesAns,
+'Fantastic ' + user + ', you are right!', 'Bummer ' + user + ', you got question 2 wrong.', res2], [user + ', here is question number 3: Do I have 4 kids?', noAns,
 'Awesome ' + user + ', you got this one right!', 'Oops, ' + user + ', you got this one wrong.', res3]]
 
 function ask1 () {
@@ -24,7 +24,7 @@ function ask1 () {
   console.log('user\'s answer1 is: ' + answer1);
 
   // make is so we can accept 'y' or 'Y' or 'yes' or 'YES' as an acceptable response to the question
-  if (answer1.toLowerCase() === quesData[i][1][1] || answer1.toLowerCase() === quesData[i][1][2]) {
+  if (answer1.toLowerCase() === quesData[i][1][0] || answer1.toLowerCase() === quesData[i][1][1]) {
     //alert('Great ' + user + ', you got the first question right')
     quesData[i][4].textContent = quesData[i][2];
     console.log('user got question1 correct.');
